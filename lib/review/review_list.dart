@@ -9,3 +9,4 @@ class ReviewList extends StatelessWidget{
   }
 
 }
+//agregar conteo de estrellas dinamico en el titulo y la descripcion de usuario
