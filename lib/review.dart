@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
 class Review extends StatelessWidget{
-  String photoPath = "assets/photos/darleny.jpeg";
-  String nameUser = "Karuna";
-  int stars_q;
-  String details = "1 Review 5 photos";
-  String comment = "This is the most amazing place i've ever known";
-  Review(this.photoPath,this.nameUser, this.stars_q, this.details,this.comment, {super.key});
+  String photoPath;
+  String nameUser;
+  // int stars_q;
+  String details;
+  String comment;
+  Review(this.photoPath,this.nameUser, this.details,this.comment, {super.key});
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -20,6 +20,7 @@ class Review extends StatelessWidget{
         style: const TextStyle(
           fontFamily: "Lato",
           fontSize: 17.0,
+          color: Colors.black,
         ),
       ),
     );
@@ -33,9 +34,9 @@ class Review extends StatelessWidget{
         details,
         textAlign: TextAlign.left,
         style: const TextStyle(
-          fontFamily: "Lato_text",
+          fontFamily: "Lato",
           fontSize: 13.0,
-          color: Colors.white60,
+          color: Colors.black38,
         ),
       ),
     );
@@ -58,17 +59,19 @@ class Review extends StatelessWidget{
           left:20.0
       ),
       child: Text(
-        details,
+        comment,
         textAlign: TextAlign.left,
         style: const TextStyle(
-          fontFamily: "Lato_text",
-          fontSize: 14.0,
-          color: Colors.white60,
+          fontFamily: "Lato",
+          fontSize: 13.0,
+          color: Colors.black54,
           fontWeight: FontWeight.w900,
         ),
       ),
     );
 
+
+ ////////////////////Full component details   ////////////////
     // Main Component
     final userDetails = Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -78,6 +81,9 @@ class Review extends StatelessWidget{
           user_comments,
         ]
     );
+
+////////////////////////////////////////////////////////////
+//    left component
     final photo = Container(
       margin: const EdgeInsets.only(
         top:20.0,
@@ -94,6 +100,8 @@ class Review extends StatelessWidget{
         ),
       ),
     );
+
+
     return Row(
       children: <Widget>[
         photo,

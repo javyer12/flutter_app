@@ -52,15 +52,15 @@ class DescriptionPlace extends StatelessWidget {
 
     final description = Container(
       margin: const EdgeInsets.only(
-        top: 25.0,
+        top: 15.0,
         right: 25.0,
         left: 25.0,
       ),
       child: Text(
         descriptionPlace,
         style:const TextStyle(
-          fontFamily: "Lato_text",
-          fontSize: 20.0,
+          fontFamily: "Lato",
+          fontSize: 17.0,
           fontWeight: FontWeight.normal,
           color: Colors.black54,
         ),

@@ -90,7 +90,7 @@ flutter:
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
   assets:
-    - assets/photos/darleny.jpeg
+    - assets/photos/
 
   fonts:
     - family: Lato
@@ -98,4 +98,4 @@ flutter:
         - asset: fonts/Lato-Bold.ttf
     - family: Lato_text
       fonts:
-        - asset: fonts/Lato-Italic.ttf
+        - asset: fonts/Lato-Thin.ttf

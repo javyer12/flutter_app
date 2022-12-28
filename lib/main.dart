@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'description_place.dart';
-import 'text_description.dart';
+import 'review/review_list.dart';
+import 'gradient/gradient_back.dart';
 
 void main() {
   runApp(const MyApp());
@@ -33,11 +34,23 @@ Los widgets hijos, que van a ser organizados dentro de un Column padre, deben es
       ),
       // home: const MyHomePage(title: 'Flutter Demo Home Page'),
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text("Hello the entire Flutter World"),
-        ),
-        body: DescriptionPlace("Lusiana", 3, text),
+        // appBar: AppBar(
+        //   title: const Text("Hello the entire Flutter World"),
+        // ),
+        // body: DescriptionPlace("Lusiana", 3, text),
 
+        // body: ReviewList(),
+        body: Stack(
+          children: <Widget>[
+            ListView(
+              children: <Widget>[
+                DescriptionPlace("Lusiana", 3, text),
+                ReviewList(),
+              ],
+            ),
+            GradientBack("Popular"),
+          ],
+        ),
       ),
         // bottomNavigationBar: ,
         // floatingActionButton: ,
