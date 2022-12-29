@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'description_place.dart';
 import 'review/review_list.dart';
 import 'gradient/gradient_back.dart';
+import 'header/header_appbar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -44,11 +45,11 @@ Los widgets hijos, que van a ser organizados dentro de un Column padre, deben es
           children: <Widget>[
             ListView(
               children: <Widget>[
-                DescriptionPlace("Lusiana", 3, text),
+                DescriptionPlace("Peru", 3, text),
                 ReviewList(),
               ],
             ),
-            GradientBack("Popular"),
+            Header(),
           ],
         ),
       ),
