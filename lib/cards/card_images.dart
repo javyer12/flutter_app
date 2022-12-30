@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:home_trip_app/floating_button/floating_action_button.dart';
 
 class CardImage extends StatelessWidget{
   String pathImage = "assets/photo/ima1.jpg";
@@ -8,7 +9,7 @@ class CardImage extends StatelessWidget{
     // TODO: implement build
     final card = Container(
       height: 350.0,
-      width:250.0,
+      width:300.0,
       margin:const EdgeInsets.only(
         top:80.0,
         left: 20.0
@@ -30,6 +31,12 @@ class CardImage extends StatelessWidget{
       ),
     );
 
-    return card;
+    return Stack(
+      alignment: Alignment(0.4,1.2),
+      children: <Widget>[
+        card,
+        FloationButtonGreen()
+      ],
+    );
   }
 }

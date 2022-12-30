@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'description_place.dart';
-import 'review/review_list.dart';
-import 'gradient/gradient_back.dart';
-import 'header/header_appbar.dart';
+import 'trips_logic/trips.dart';
 
 void main() {
   runApp(const MyApp());
@@ -34,25 +31,16 @@ Los widgets hijos, que van a ser organizados dentro de un Column padre, deben es
         primarySwatch: Colors.blue,
       ),
       // home: const MyHomePage(title: 'Flutter Demo Home Page'),
-      home: Scaffold(
+      home: Trips(),
+      // Scaffold(
         // appBar: AppBar(
         //   title: const Text("Hello the entire Flutter World"),
         // ),
         // body: DescriptionPlace("Lusiana", 3, text),
 
         // body: ReviewList(),
-        body: Stack(
-          children: <Widget>[
-            ListView(
-              children: <Widget>[
-                DescriptionPlace("Peru", 3, text),
-                ReviewList(),
-              ],
-            ),
-            Header(),
-          ],
-        ),
-      ),
+        // body:Trips(),
+      // ),
         // bottomNavigationBar: ,
         // floatingActionButton: ,
         // floatingActionButtonLocation: ,

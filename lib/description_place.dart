@@ -41,7 +41,7 @@ class DescriptionPlace extends StatelessWidget {
     //complete stars
     final stars = Container(
       margin: const EdgeInsets.only(
-        top: 320.0,
+        top: 300.0,
         right: 3.0,
         left: 3.0,
       ),
@@ -61,9 +61,8 @@ class DescriptionPlace extends StatelessWidget {
         descriptionPlace,
         style:const TextStyle(
           fontFamily: "Lato",
-          fontSize: 17.0,
-          fontWeight: FontWeight.normal,
-          color: Colors.black54,
+          fontSize: 13.0,
+          color: Colors.black45,
         ),
         textAlign: TextAlign.left,
       ),
@@ -73,7 +72,7 @@ class DescriptionPlace extends StatelessWidget {
       children: <Widget>[
         Container(
           margin: const EdgeInsets.only(
-            top: 320.0,
+            top: 300.0,
             left: 25.0,
             right: 25.0,
           ),
